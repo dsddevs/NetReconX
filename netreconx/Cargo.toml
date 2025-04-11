@@ -1,0 +1,13 @@
+[package]
+name = "netreconx"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = {version = "0.12.15", default-features = false, features = ["json", "blocking", "rustls-tls"]}
+thiserror = {version = "2.0.12"}
+serde = { version = "1.0.219", features = ["derive"] }
+trust-dns-resolver = "*"
+anyhow = {version = "1.0.97"}
+env = "1.0.1"
+rayon = "1.10.0"
